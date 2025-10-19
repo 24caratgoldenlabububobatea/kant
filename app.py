@@ -7,15 +7,15 @@ app = Flask(__name__)
 def home():
     return render_template("hjemmeside.html")
 
-@app.route('/Meny')
+@app.route('/meny')
 def meny():
     return render_template("meny.html")
 
-@app.route('/Varer')
+@app.route('/varer')
 def varer():
     return render_template("varer.html")
 
-@app.route('/Kontakt')
+@app.route('/kontakt')
 def kontakt():
     return render_template("kontakt.html")
 
