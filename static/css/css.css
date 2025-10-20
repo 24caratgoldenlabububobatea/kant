@@ -1,9 +1,9 @@
 body {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.5),  
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.8),  
+      rgba(0, 0, 0, 0.8)
     ),
-    url('akademiet1.png') no-repeat center center / cover;
+    url('../akademiet1.png') no-repeat center center / cover;
   
   
   min-height: 100vh;
@@ -48,7 +48,7 @@ body {
   transform: skew(-3deg);
 }
 
-/* CONTENT SHAPES */
+/* SHAPES */
 .content {
   position: relative;
   margin-top: 100px;
