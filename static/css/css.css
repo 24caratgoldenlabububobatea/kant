@@ -8,7 +8,7 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background:
+  background: 
     linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
     url("../images/akademiet1.png") center center / cover no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -64,7 +64,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px; /* adjust as needed */
 }
 
 .shapes {
@@ -173,17 +172,13 @@ html, body {
 }
 
 /* Index */
-
 .hjemmeside-content {
   position: absolute;
-  top: 150px; 
+  top: 150px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   text-align: center;
   color: #000;
   background: transparent;
-  z-index: 5; 
+  z-index: 5;
 }
-
-
-
