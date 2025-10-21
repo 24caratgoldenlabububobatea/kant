@@ -5,49 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
-    {% block head %}{% endblock %} 
+    {% block head %}{% endblock %}
+    <title>My Page</title>
 </head>
 <body>
-  <div class="page">
+    <div class="page">
+        <header class="header">
+            <div class="red-bg"></div>
+            <div class="white-bg"></div>
+            <nav class="menu">
+                <a href="/">Hjemmeside</a>
+                <a href="/meny">Meny</a>
+                <a href="/varer">Varer</a>
+                <a href="/kontakt">Kontakt oss</a>
+            </nav>
+        </header>
 
-    <header class="header">
-      <div class="red-bg"></div>
-      <div class="white-bg"></div>
-      <nav class="menu">
-        <a href="/">Hjemmeside</a>
-        <a href="/meny">Meny</a>
-        <a href="/varer">Varer</a>
-        <a href="/kontakt">Kontakt oss</a>
-      </nav>
-    </header>
-
-    <section class="content">
-      <div class="shapes">
-        <div class="shape red"></div>
-        <div class="shape black"></div>
-        <div class="shape white">
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h3>Kontakt oss</h3>
-          <p>Telefon: 123 45 678</p>
-          <p>E-post: info@kantine.no</p>
-        </div>
-        <div class="footer-section">
-          <h3>Lenker</h3>
-          <a href="/">Hjemmeside</a>
-          <a href="/meny">Meny</a>
-          <a href="/varer">Varer</a>
-          <a href="/kontakt">Kontakt oss</a>
-        </div>
-    </footer>
-
-  </div>
-
-  {% block body %}{% endblock %}
+        <section class="content">
+            <div class="shapes">
+                <div class="shape red"></div>
+                <div class="shape black"></div>
+                <div class="shape white">
+                    <p>
+                        bla bla bla bla bla<br>
+                        bla bla bla bla bla
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    {% block body %}{% endblock %}
 </body>
 </html>
