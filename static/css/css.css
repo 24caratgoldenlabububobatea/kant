@@ -1,110 +1,89 @@
-/* GENERAL */
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-                url("../images/akademiet1.png") center center / cover no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+  background: url('../bilder/akademiet1.png') center/cover no-repeat;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 /* HEADER */
 .header {
-    position: relative;
-    height: 120px;
+  position: relative;
+  height: 120px;
 }
 
 .red-bg {
-    background: #E60012;
-    clip-path: polygon(0 0, 53% 0, 95% 50%, 0 19%);
-    height: 300%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.white-bg {
-    background: #ffffff;
-    clip-path: polygon(100% 0, 47% 0, 5% 50%, 100% 22%);
-    height: 300%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  background: #E60012;
+  clip-path: polygon(0 0, 80% 0, 100% 50%, 0 100%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .menu {
-    position: absolute;
-    right: 2rem;
-    top: 30%;
-    display: flex;
-    gap: 10px;
+  position: absolute;
+  right: 2rem;
+  top: 30%;
+  display: flex;
+  gap: 10px;
 }
 
 .menu a {
-    background: black;
-    color: white;
-    font-weight: 700;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    transform: skew(-3deg);
+  background: black;
+  color: white;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transform: skew(-3deg);
 }
 
-/* SHAPES */
+/* CONTENT SHAPES */
 .content {
-    position: relative;
-    margin-top: 100px;
-    padding: 3rem;
-}
-
-.shapes {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+  padding: 3rem;
 }
 
 .shape {
-    position: absolute;
+  position: absolute;
+  clip-path: polygon(0 10%, 70% 0, 100% 60%, 80% 100%, 10% 90%);
 }
 
-/* Red base shape */
 .shape.red {
-    background: #E60012;
-    width: 600px;
-    height: 400px;
-    left: 200px;
-    top: 50px;
-    z-index: 1;
+  background: #E60012;
+  width: 600px;
+  height: 400px;
+  left: 200px;
+  top: 50px;
+  z-index: 1;
+   clip-path: polygon(10% 15%, 80% 0, 100% 50%, 80% 100%, 0 85%);
 }
 
-/* Black middle shape */
 .shape.black {
-    background: #000;
-    width: 550px;
-    height: 380px;
-    left: 220px;
-    top: 70px;
-    z-index: 2;
-    clip-path: polygon(10% 15%, 80% 0, 100% 50%, 80% 100%, 0 85%);
+  background: #000;
+  width: 550px;
+  height: 380px;
+  left: 220px;
+  top: 70px;
+  z-index: 2;
+  clip-path: polygon(10% 15%, 80% 0, 100% 50%, 80% 100%, 0 85%);
 }
 
-/* White front shape */
 .shape.white {
-    background: #fff;
-    width: 500px;
-    height: 350px;
-    left: 240px;
-    top: 90px;
-    z-index: 3;
-    padding: 2rem;
-    clip-path: polygon(0 5%, 80% 0, 100% 60%, 80% 100%, 5% 95%);
+  background: #fff;
+  width: 500px;
+  height: 350px;
+  left: 240px;
+  top: 90px;
+  z-index: 3;
+  padding: 2rem;
+  clip-path: polygon(0 5%, 80% 0, 100% 60%, 80% 100%, 5% 95%);
 }
 
 .shape.white p {
-    font-weight: 800;
-    font-size: 1.1rem;
-    color: #000;
-    line-height: 1.8;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #000;
+  line-height: 1.8;
 }
