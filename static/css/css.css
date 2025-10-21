@@ -1,19 +1,18 @@
-body {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.8),  
-      rgba(0, 0, 0, 0.8)
-    ),
-    url('../akademiet1.png') no-repeat center center / cover;
-  
-  
-  min-height: 100vh;
+/* GENERAL PAGE LAYOUT */
+html, body {
+  height: 100%;
   margin: 0;
-
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  overflow-x: hidden;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("../images/akademiet1.png") center center / cover no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
 
 /* HEADER */
 .header {
@@ -22,7 +21,7 @@ body {
 }
 
 .red-bg {
-  background: #F08921;
+  background: #E60012;
   clip-path: polygon(0 0, 53% 0, 95% 50%, 0 19%);
   height: 300%;
   width: 100%;
@@ -31,14 +30,14 @@ body {
   left: 0;
 }
 
-.white-bg{
-    background: #ffffff;
-    clip-path: polygon(100% 0, 47% 0, 5% 50%, 100% 22%);
-    height: 300%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+.white-bg {
+  background: #ffffff;
+  clip-path: polygon(100% 0, 47% 0, 5% 50%, 100% 22%);
+  height: 300%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .menu {
@@ -58,22 +57,22 @@ body {
   transform: skew(-3deg);
 }
 
-/* SHAPES */
+/* CONTENT SHAPES */
 .content {
+  flex: 1;
   position: relative;
-  margin-top: 100px;
-  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px; /* adjust as needed */
 }
 
-/* Parent */
 .shapes {
   position: relative;
-  height: 100vh;
   width: 100%;
-  overflow: hidden;
-  background: #000; 
+  max-width: 1200px;
+  height: 500px;
 }
-
 
 .shape {
   position: absolute;
@@ -81,13 +80,12 @@ body {
 
 /* Red base shape */
 .shape.red {
-  background: #F08921;
+  background: #E60012;
   width: 600px;
   height: 400px;
   left: 200px;
   top: 50px;
   z-index: 1;
-  clip-path: polygon(10% 15%, 80% 0, 100% 50%, 80% 100%, 0 85%);
 }
 
 /* Black middle shape */
@@ -111,17 +109,81 @@ body {
   z-index: 3;
   padding: 2rem;
   clip-path: polygon(0 5%, 80% 0, 100% 60%, 80% 100%, 5% 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Under here is css for hjemmeseide.html */
+.shape.white h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.shape.white p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  color: #E60012;
+  margin-bottom: 1rem;
+}
+
+.footer-section a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a:hover {
+  color: #E60012;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+/* Index */
 
 .hjemmeside-content {
-  color: #000;
   position: absolute;
-  top: 50%;           
-  left: 50%;          
-  transform: translate(-130%, -30%);  
+  top: 150px; 
+  left: 50%;
+  transform: translateX(-50%); 
   text-align: center;
-  z-index: 4;
-  
+  color: #000;
+  background: transparent;
+  z-index: 5; 
 }
+
+
+

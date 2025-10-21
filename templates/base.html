@@ -8,25 +8,54 @@
     {% block head %}{% endblock %} 
 </head>
 <body>
-    <div class="page">
-  <header class="header">
-    <div class="red-bg"></div>
-    <div class="white-bg"></div>
-    <nav class="menu">
-      <a href="/">Hjemmeside</a>
-      <a href="/meny">Meny</a>
-      <a href="/varer">Varer</a>
-      <a href="/kontakt">Kontakt oss</a>
-    </nav>
-  </header>
+  <div class="page">
 
-  <section class="content">
-    <div class="shape red"></div>
-    <div class="shape black"></div>
-    <div class="shape white">
-    </div>
-  </section>
-</div>
-    {% block body %}{% endblock %}
+    <header class="header">
+      <div class="red-bg"></div>
+      <div class="white-bg"></div>
+      <nav class="menu">
+        <a href="/">Hjemmeside</a>
+        <a href="/meny">Meny</a>
+        <a href="/varer">Varer</a>
+        <a href="/kontakt">Kontakt oss</a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <div class="shapes">
+        <div class="shape red"></div>
+        <div class="shape black"></div>
+        <div class="shape white">
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Kontakt oss</h3>
+          <p>Telefon: 123 45 678</p>
+          <p>E-post: info@kantine.no</p>
+        </div>
+        <div class="footer-section">
+          <h3>Lenker</h3>
+          <a href="/">Hjemmeside</a>
+          <a href="/meny">Meny</a>
+          <a href="/varer">Varer</a>
+          <a href="/kontakt">Kontakt oss</a>
+        </div>
+        <div class="footer-section">
+          <h3>Følg oss</h3>
+          <p>Facebook | Instagram | Twitter</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Kantine. Alle rettigheter reservert.
+      </div>
+    </footer>
+
+  </div>
+
+  {% block body %}{% endblock %}
 </body>
 </html>
