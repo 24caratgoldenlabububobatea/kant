@@ -118,10 +118,10 @@ body {
 .hjemmeside-content {
   color: #000;
   position: absolute;
-  font-family: 'Poppins', sans-serif;
   top: 50%;           
   left: 50%;          
   transform: translate(-130%, -30%);  
   text-align: center;
   z-index: 4;
+  
 }
