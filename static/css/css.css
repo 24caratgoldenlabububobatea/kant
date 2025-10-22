@@ -114,5 +114,6 @@ body {
     background-size: cover;   /* or 'contain' */
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 4;
 }
 
