@@ -15,7 +15,7 @@ body {
 }
 
 .red-bg {
-    background: #E60012;
+    background: #F08921;
     clip-path: polygon(0 0, 53% 0, 95% 50%, 0 19%);
     height: 300%;
     width: 100%;
@@ -71,7 +71,7 @@ body {
 
 /* Red base shape */
 .shape.red {
-    background: #E60012;
+    background: #F08921;
     width: 600px;
     height: 400px;
     left: 200px;
@@ -108,3 +108,11 @@ body {
     color: #000;
     line-height: 1.8;
 }
+
+.shape.white {
+    background-image: url("../static/bilder/logo.png");
+    background-size: cover;   /* or 'contain' */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
