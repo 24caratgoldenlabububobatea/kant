@@ -14,7 +14,7 @@ body {
     height: 120px;
 }
 
-.red-bg {
+.Orange-bg {
     background: #F08921;
     clip-path: polygon(0 0, 53% 0, 95% 50%, 0 19%);
     height: 300%;
@@ -109,11 +109,73 @@ body {
     line-height: 1.8;
 }
 
-.shape.white {
-    background-image: url("../static/bilder/logo.png");
-    background-size: cover;   /* or 'contain' */
+.logo {
+    position: absolute;
+    left: 50%;             /* center horizontally */
+    top: 37px;             /* adjust vertical position */
+    transform: translateX(-50%); /* perfect horizontal centering */
+    width: 150px;
+    height: 50px;
+    background-image: url("../bilder/akademiet_logo.png");
+    background-size: 100% 100%;   
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 4;
 }
+
+/*footer*/
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo .logo {
+  width: 150px;
+  height: 50px;
+  background-image: url("../bilder/akademiet_logo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #f39c12; /* highlight color on hover */
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #f39c12;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
 
