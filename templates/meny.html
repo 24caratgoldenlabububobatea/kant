@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Meny</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="meals-container">
+    <h1>{{ day }} Meny</h1>
+    {% for meal in meals %}
+        <div class="meal">{{ meal }}</div>
+    {% endfor %}
+</div>
+{% endblock %}

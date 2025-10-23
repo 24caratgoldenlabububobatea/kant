@@ -204,6 +204,30 @@ body {
     width: 200px;
 }
 
+.meals-container {
+    position: relative;       
+    z-index: 10;
+    margin: 50px 0 30px 200px;        
+    display: flex;            
+    flex-wrap: wrap;       
+    padding: 20px;
+    max-width: 800px;    
+    transform: skew(-3deg);    
+    gap: 10px; 
+    color: #ffffff;
+}
+
+.varer_meal {
+    background-color: #f39c12;
+    padding: 15px 25px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 180px;
+}
+
+
 .menu {
     position: absolute;
     right: 2rem;
@@ -219,6 +243,3 @@ body {
     text-decoration: none;
     transform: skew(-3deg);
 }
-
-
-

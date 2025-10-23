@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 regular_meals = ["Pizza", "Kyllingnuggets", "Spaghetti"]
 
-# Now we have 5 weekly specials (one for each weekday)
 weekly_specials = [
     ["Taco", "Chili", "Burritos"],                     
     ["Hamburger", "Pølse med brød", "Pommes frites"],  
@@ -34,7 +33,8 @@ def meny():
 
 @app.route('/varer')
 def varer():
-    return render_template("varer.html")
+    day_name = "Alle dager"
+    return render_template("varer.html", meals=regular_meals, day=day_name)
 
 @app.route('/kontakt')
 def kontakt():
