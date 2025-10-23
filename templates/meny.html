@@ -3,13 +3,13 @@
 {% block head %}
     <title>Meny</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+    
 {% endblock %}
-
 {% block body %}
-    <h1>Uke {{ week }} Meny</h1>
-    <ul>
+<div class="meals-container">
+<h1>Uke {{ week }} Meny</h1>
         {% for meal in meals %}
-            <li>{{ meal }}</li>
+            <div class="meal">{{ meal }}</div>
         {% endfor %}
-    </ul>
+    </div>
 {% endblock %}

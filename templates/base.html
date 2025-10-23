@@ -22,23 +22,17 @@
         </header>
 
         <a href="/logo" class="logo"></a>
-
         <section class="content">
             <div class="shapes">
                 <div class="shape red"></div>
                 <div class="shape black"></div>
                 <div class="shape white">
-
-                    <p>
-                        bla bla bla bla bla<br>
-                        bla bla bla bla bla
-                    </p>
-                </div>
+                </div> <p> {% block body %}{% endblock %} </p>
             </div>
         </section>
     </div>
     
-    {% block body %}{% endblock %}
+    
     
     <footer class="footer">
   <div class="footer-container">

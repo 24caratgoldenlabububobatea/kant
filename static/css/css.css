@@ -179,4 +179,28 @@ body {
   color: #aaa;
 }
 
+/* meny page */
+.meals-container {
+    position: relative;       
+    z-index: 10;
+    margin: 100px auto 50px auto;        
+    display: flex;            
+    flex-wrap: wrap;
+    justify-content: center;        
+    padding: 20px;
+    max-width: 2px;        
+    gap: 20px; /* ← space between each meal */
+}
+
+.meal {
+    background-color: #f8f8f8;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
 
