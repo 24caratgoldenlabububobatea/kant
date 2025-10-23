@@ -183,13 +183,12 @@ body {
 .meals-container {
     position: relative;       
     z-index: 10;
-    margin: 100px auto 50px auto;        
+    margin: 50px 0 30px 200px;        
     display: flex;            
-    flex-wrap: wrap;
-    justify-content: center;        
+    flex-wrap: wrap;       
     padding: 20px;
-    max-width: 2px;        
-    gap: 20px; /* ← space between each meal */
+    max-width: 200px;        
+    gap: 10px; 
 }
 
 .meal {
@@ -200,6 +199,23 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+
+.menu {
+    position: absolute;
+    right: 2rem;
+    top: 30%;
+    display: flex;
+    gap: 10px;
+}
+
+.menu a {
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    transform: skew(-3deg);
 }
 
 
