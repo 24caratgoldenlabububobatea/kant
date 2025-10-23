@@ -3,13 +3,13 @@ import random
 
 app = Flask(__name__)
 
-regular_meals = ["Pizza", "Chicken Nuggets", "Spaghetti"]
+regular_meals = ["Pizza", "Kyllingnuggets", "Spaghetti"]
 
 weekly_specials = [
-    ["Tacos", "Chili", "Burritos"],
-    ["Hamburgers", "Hot Dogs", "Fries"],
-    ["Fish Sticks", "Mac and Cheese", "Salad"],
-    ["Meatloaf", "Mashed Potatoes", "Corn"]
+    ["Taco", "Chili", "Burritos"],
+    ["Hamburger", "Pølse med brød", "Pommes frites"],
+    ["Fiskepinner", "Mac and Cheese", "Salat"],
+    ["Kjøttkake", "Potetmos", "Mais"]
 ]
 
 @app.route('/')
