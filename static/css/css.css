@@ -187,18 +187,21 @@ body {
     display: flex;            
     flex-wrap: wrap;       
     padding: 20px;
-    max-width: 200px;        
+    max-width: 180px;    
+    transform: skew(-3deg);    
     gap: 10px; 
+    color :#ffffff
+    
 }
 
 .meal {
-    background-color: #f8f8f8;
+    background-color: #f39c12;
     padding: 15px 25px;
-    border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    width: 200px;
 }
 
 .menu {
@@ -213,7 +216,6 @@ body {
     background: black;
     color: white;
     font-weight: 700;
-    padding: 0.5rem 1.5rem;
     text-decoration: none;
     transform: skew(-3deg);
 }
