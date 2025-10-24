@@ -3,14 +3,14 @@ import datetime
 
 app = Flask(__name__)
 
-regular_meals = ["Pizza", "Kyllingnuggets", "Spaghetti"] #the food for every day
+regular_meals = ["Pizza med ost", "Kyllingnuggets med microplast", "Spaghetti med spaghet"] #the food for every day
 
 weekly_specials = [ #all the food for the week
-    ["Taco", "Chili", "Burritos"],                     
-    ["Hamburger", "Pølse med brød", "Pommes frites"],  
-    ["Fiskepinner", "Mac and Cheese", "Salat"],        
-    ["Kjøttkake", "Potetmos", "Mais"],                 
-    ["Lasagne", "Kebab", "Cæsarsalat"]                 
+    ["Taco som er ok", "Chili uten chill", "Burritos med kristene bønner"],                     
+    ["Hamburger fra hamburg", "Pølse med brød", "Pommes frites med exsra pommes"],  
+    ["Fiskepinner uten pinne", "Macbok and Cheese", "Salat med salsa danser"],        
+    ["Kjøttkake med stor kake", "Potetmos moset potet", "Mais er kult"],                 
+    ["Lasagne med lala", "Kebab med bob habab", "Cæsarsalat med ekstra cæsar"]                 
 ]
 
 @app.route('/')
