@@ -10,13 +10,35 @@ regular_meals = [
 ]
  #the food for every day
 
-weekly_specials = [ #all the food for the week
-    ["Taco som er ok - 2kr", "Chili uten chill 34kr", "Burritos med kristene bønner"],                     
-    ["Hamburger fra hamburg", "Pølse med brød", "Pommes frites med exsra pommes"],  
-    ["Fiskepinner uten pinne", "Macbok and Cheese", "Salat med salsa danser"],        
-    ["Kjøttkake med stor kake", "Potetmos moset potet", "Mais er kult"],                 
-    ["Lasagne med lala", "Kebab med bob habab", "Cæsarsalat med ekstra cæsar"]                 
+weekly_specials = [
+    [   # Monday
+        {"name": "Taco som er ok - 2kr", "image": "bilder/taco.png"},
+        {"name": "Chili uten chill 34kr", "image": "bilder/chili.png"},
+        {"name": "Burritos med kristene bønner", "image": "bilder/burrito.png"}
+    ],
+    [   # Tuesday
+        {"name": "Hamburger fra hamburg", "image": "bilder/hamburger.png"},
+        {"name": "Pølse med brød", "image": "bilder/polse.png"},
+        {"name": "Pommes frites med ekstra pommes", "image": "bilder/pommes.png"}
+    ],
+    [   # Wednesday
+        {"name": "Fiskepinner uten pinne", "image": "bilder/fiskepinne.png"},
+        {"name": "Macbok and Cheese", "image": "bilder/macncheese.png"},
+        {"name": "Salat med salsa danser", "image": "bilder/salat.png"}
+    ],
+    [   # Thursday
+        {"name": "Kjøttkake med stor kake", "image": "bilder/kjottkake.png"},
+        {"name": "Potetmos moset potet", "image": "bilder/potetmos.png"},
+        {"name": "Mais er kult", "image": "bilder/mais.png"}
+    ],
+    [   # Friday
+        {"name": "Lasagne med lala", "image": "bilder/lasagne.png"},
+        {"name": "Kebab med bob habab", "image": "bilder/kebab.png"},
+        {"name": "Cæsarsalat med ekstra cæsar", "image": "bilder/caesar.png"}
+    ]
 ]
+             
+
 
 @app.route('/')
 def home():
