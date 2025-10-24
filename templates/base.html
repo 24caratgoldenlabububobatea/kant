@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}"> <!-- Metadata amd just stuff to get the site to work -->
     {% block head %}{% endblock %}
     <title>My Page</title>
 </head>
+
 <body>
-    <div class="page">
-        <header class="header">
+    <div class="page"> 
+        <header class="header"><!-- Honestly you can figure out what this is if you read what is in index it's pretty short. now it's just about the logo etc. -->
             <div class="Orange-bg"></div>
             <div class="white-bg"></div>
             <nav class="menu">
@@ -32,7 +33,6 @@
     <footer class="footer">
   <div class="footer-container">
     <div class="footer-logo">
-      <div class="logo"></div> <!-- reuse your .logo CSS -->
     </div>
 
     <nav class="footer-nav">
