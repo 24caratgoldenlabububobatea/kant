@@ -1,22 +1,20 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <title>Meny</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+<title>Meny</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
 {% endblock %}
 
 {% block body %}
 <div class="meals-container">
-    <h1>{{ day }} Meny</h1>
-    {% for meal in meals %}
-        <div class="varer_meal">{{ meal }}</div>
-    {% endfor %}
-</div> 
-
-<!-- Food row container -->
-<div class="food-row">
-    <div class="nugget"></div>
-    <div class="pizza"></div>
-    <div class="spaghetti"></div>
+    <h1>{{ day }} meny</h1>
+    <div class="food-row">
+        {% for meal in meals %}
+            <div class="meal-card">
+                <img src="{{ url_for('static', filename=meal.image) }}" alt="{{ meal.name }}">
+                <p>{{ meal.name }}</p>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}

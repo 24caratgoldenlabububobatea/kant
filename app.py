@@ -3,10 +3,15 @@ import datetime
 
 app = Flask(__name__)
 
-regular_meals = ["Pizza med ost", "Kyllingnuggets med microplast", "Spaghetti med spaghet"] #the food for every day
+regular_meals = [
+    {"name": "Pizza med ost", "image": "/bilder/pizza.png"},
+    {"name": "Kyllingnuggets med microplast", "image": "/bilder/nugget.png"},
+    {"name": "Spaghetti med spaghet", "image": "/bilder/spagetti.png"}
+]
+ #the food for every day
 
 weekly_specials = [ #all the food for the week
-    ["Taco som er ok", "Chili uten chill", "Burritos med kristene bønner"],                     
+    ["Taco som er ok - 2kr", "Chili uten chill 34kr", "Burritos med kristene bønner"],                     
     ["Hamburger fra hamburg", "Pølse med brød", "Pommes frites med exsra pommes"],  
     ["Fiskepinner uten pinne", "Macbok and Cheese", "Salat med salsa danser"],        
     ["Kjøttkake med stor kake", "Potetmos moset potet", "Mais er kult"],                 
@@ -33,7 +38,7 @@ def meny():
 
 @app.route('/varer')
 def varer():
-    day_name = "Alle dager"
+    day_name = "Faste varer"
     return render_template("varer.html", meals=regular_meals, day=day_name) #enforces the variables meals and day in varer.html
 
 @app.route('/kontakt')
