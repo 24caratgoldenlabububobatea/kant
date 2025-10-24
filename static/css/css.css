@@ -284,3 +284,116 @@ body {
     background-repeat: no-repeat;
     border-radius: 8px;
 }
+
+/* kontakt oss */
+
+/* Kontakt-side styling */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 900px;            /* keeps it from going too wide */
+    background-color: #fff3e0;   /* soft orange background */
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-container h1 {
+    margin: 0 0 12px 0;
+    color: #e67e22;
+    font-size: 1.8rem;
+}
+
+.contact-desc {
+    margin: 0 0 20px 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Flexbox row for contact items (phone + email) */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 36px;           /* space between phone and email boxes */
+    margin-top: 18px;
+    flex-wrap: wrap;     /* wrap on small screens */
+    align-items: stretch;
+}
+
+/* Individual contact card */
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px 26px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    flex: 1 1 220px;     
+    max-width: 320px;   
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-item h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+    color: #e67e22;
+}
+
+.contact-data {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #444;
+}
+
+/* actions / buttons area */
+.contact-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* button style */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.back-btn {
+    background-color: #e67e22;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(230,126,34,0.18);
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Testing responsiveness, i haven't used this on the other parts of the site but it i should do it more next time i think! */
+@media (max-width: 560px) {
+    .contact-container {
+        padding: 22px;
+    }
+    .contact-info {
+        gap: 14px;
+    }
+    .contact-item {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
