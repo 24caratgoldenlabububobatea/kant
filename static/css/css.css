@@ -114,7 +114,7 @@ body {
     position: absolute;
     left: 50%;             /* center horizontally */
     top: 37px;             /* adjust vertical position */
-    transform: translateX(-50%); /* perfect horizontal centering */
+    transform: translateX(-50%); /* horizontal centering */
     width: 150px;
     height: 50px;
     background-image: url("../bilder/akademiet_logo.png");
