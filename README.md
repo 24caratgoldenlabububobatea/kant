@@ -72,6 +72,6 @@ Etter testing ble mellomrom, tekstjustering og bildeplassering forbedret.
 
 ---
 
-Laget av: [Ditt navn]  
+Laget av: Jonathan 
 For: Akademiet VGS  
 © 2025 – Alle rettigheter forbeholdt.
