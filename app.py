@@ -13,27 +13,27 @@ weekly_specials = [
     [   # Monday
         {"name": "Taco som er ok - 2kr", "image": "bilder/taco.png"},
         {"name": "Chili uten chill 34kr", "image": "bilder/chili.png"},
-        {"name": "Burritos med kristene bønner", "image": "bilder/burrito.png"}
+        {"name": "Burritos med kristene bønner 2kr", "image": "bilder/burrito.png"}
     ],
     [   # Tuesday
-        {"name": "Hamburger fra hamburg", "image": "bilder/hamburger.png"},
-        {"name": "Pølse med brød", "image": "bilder/polse.png"},
+        {"name": "Hamburger fra hamburg 1000kr", "image": "bilder/hamburger.png"},
+        {"name": "Pølse med brød 23kr", "image": "bilder/polse.png"},
         {"name": "Pommes frites med ekstra pommes", "image": "bilder/pommes.png"}
     ],
     [   # Wednesday
-        {"name": "Fiskepinner uten pinne", "image": "bilder/fiskepinne.png"},
-        {"name": "Macbok and Cheese", "image": "bilder/macncheese.png"},
-        {"name": "Salat med salsa danser", "image": "bilder/salat.png"}
+        {"name": "Fiskepinner uten pinne 234kr", "image": "bilder/fiskepinne.png"},
+        {"name": "Macbok and Cheese 2323kr", "image": "bilder/macncheese.png"},
+        {"name": "Salat med salsa danser 93982kr", "image": "bilder/salat.png"}
     ],
     [   # Thursday
-        {"name": "Kjøttkake med stor kake", "image": "bilder/kjottkake.png"},
-        {"name": "Potetmos moset potet", "image": "bilder/potetmos.png"},
-        {"name": "Mais er kult", "image": "bilder/mais.png"}
+        {"name": "Kjøttkake med stor kake 82839kr", "image": "bilder/kjottkake.png"},
+        {"name": "Potetmos moset potet 232kr", "image": "bilder/potetmos.png"},
+        {"name": "Mais er kult 2323kr", "image": "bilder/mais.png"}
     ],
     [   # Friday
-        {"name": "Lasagne med lala", "image": "bilder/lasagne.png"},
-        {"name": "Kebab med bob habab", "image": "bilder/kebab.png"},
-        {"name": "Cæsarsalat med ekstra cæsar", "image": "bilder/caesar.png"}
+        {"name": "Lasagne med lala 933kr", "image": "bilder/lasagne.png"},
+        {"name": "Kebab med bob habab 23kr", "image": "bilder/kebab.png"},
+        {"name": "Cæsarsalat med ekstra cæsar 94kr", "image": "bilder/caesar.png"}
     ]
 ]
 
@@ -58,8 +58,8 @@ def meny():
 
 @app.route('/varer')
 def varer():
-    day_name = "Faste varer"
-    return render_template("varer.html", meals=regular_meals, day=day_name)
+    days = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag"]
+    return render_template("varer.html", weekly_specials=zip(days, weekly_specials))
 
 @app.route('/kontakt')
 def kontakt():
