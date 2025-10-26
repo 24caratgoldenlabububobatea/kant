@@ -8,7 +8,6 @@ regular_meals = [
     {"name": "Kyllingnuggets med microplast", "image": "/bilder/nugget.png"},
     {"name": "Spaghetti med spaghet", "image": "/bilder/spagetti.png"}
 ]
- #the food for every day
 
 weekly_specials = [
     [   # Monday
@@ -37,35 +36,34 @@ weekly_specials = [
         {"name": "Cæsarsalat med ekstra cæsar", "image": "bilder/caesar.png"}
     ]
 ]
-             
-
 
 @app.route('/')
 def home():
-    return render_template("index.html") #this one just looks pretty :p
+    return render_template("index.html")
 
 @app.route('/meny')
 def meny():
-    today_index = datetime.datetime.now().weekday() #the variable today_index gets the current day of the week as an integer :D
+    today_index = datetime.datetime.now().weekday()  # Monday = 0, Sunday = 6
 
-    
-    if today_index < 5:  
+    if today_index < 5:  # Monday to Friday
         meals_today = regular_meals + weekly_specials[today_index]
-        day_name = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag"][today_index] #0 to 4 is the weekdays so if it's less than 5 we get the day name from this list
+        day_name = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag"][today_index]
     else:
-        meals_today = ["Ingen måltid i helgen!"] #if it's saturday or sunday
+        meals_today = [
+            {"name": "Ingen måltid i helgen!", "image": "/bilder/no_food.png"}
+        ]
         day_name = "Helg"
 
-    return render_template("meny.html", meals=meals_today, day=day_name) #enforces the variables meals and day in meny.html
+    return render_template("meny.html", meals=meals_today, day=day_name)
 
 @app.route('/varer')
 def varer():
     day_name = "Faste varer"
-    return render_template("varer.html", meals=regular_meals, day=day_name) #enforces the variables meals and day in varer.html
+    return render_template("varer.html", meals=regular_meals, day=day_name)
 
 @app.route('/kontakt')
 def kontakt():
-    return render_template("kontakt.html") 
+    return render_template("kontakt.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
